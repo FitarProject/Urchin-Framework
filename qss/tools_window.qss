@@ -1,0 +1,28 @@
+QWidget{
+    background-color:#8fc7e4;
+}
+QPushButton{
+    background-color:#FFFFFF;
+    color:#121416;  
+    border-radius:4;
+    border:1px solid #BBBBBB;
+}
+QPushButton:hover {
+    background-color:#0d1c2c;
+    color:#151618;  
+    border:none;
+    border:0.5px solid #495158;
+}
+QPushButton:hover:pressed{
+    background-color:rgb(85,170,255);
+    border:1px solid #3C80B1;
+    border-radius:5px;
+    color:#6f97c2;
+}
+/*
+QLabel{
+    background-color:#1684FC;
+    color:#FFFFFF;
+    border-radius:4;  
+}
+*/

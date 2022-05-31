@@ -1,0 +1,27 @@
+QFrame{
+    background-color:hsl(210, 42%, 95%);
+    color:#415058;
+}
+/*
+QLabel#main_window_logo{
+    font-size:20px;
+}
+*/
+QPushButton{
+    font-size:18px;
+    text-align:left;
+}
+
+QPushButton:hover{
+    background-color:#E6F7FF;
+    color:#1684FC;  
+    border:none;
+    border-right:1px solid #1684FC;
+}
+
+QPushButton:hover:pressed{
+    background-color:#E6F7FF;
+    color:#1684FC;  
+    border:none;
+    border-right:2px solid #1684FC;
+}

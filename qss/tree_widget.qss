@@ -1,0 +1,30 @@
+QWidget{
+    background-color:#F5F5F5;
+}
+QLabel{
+    color:#101010;
+}
+QHeaderView::section{
+    padding:3px; 
+    margin:0px; 
+    color:#383838;  
+    border:1px solid #1684FC;
+    border-left-width:0px; 
+    border-right-width:1px; 
+    border-top-width:0px; 
+    border-bottom-width:1px;
+    background-color:hsl(210, 42%, 95%);
+}
+/*
+QHeaderView::section{
+    padding:3px; 
+    margin:0px; 
+    color:#DCDCDC;  
+    border:1px solid #242424;
+    border-left-width:0px; 
+    border-right-width:1px; 
+    border-top-width:0px; 
+    border-bottom-width:1px;
+    background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #646464,stop:1 #525252); 
+}
+*/

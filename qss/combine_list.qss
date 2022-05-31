@@ -1,0 +1,13 @@
+QListWidget{
+    background-color:#F5F5F5;
+}
+QPushButton{
+    background-color:#FFFFFF;
+    color:#101010;  
+    border-radius:4;
+    border:1px solid #BBBBBB;
+}
+QFrame{
+    background-color:#F5F5F5;
+}
+

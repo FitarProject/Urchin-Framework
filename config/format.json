@@ -1,0 +1,137 @@
+# {"button_1": {"name": "button_test1", "simple_name": "发财", "folder": "C:/", "filename": "test.exe", "introduction": "这是这个工具的介绍", "command_template": ["test test {input_1} -h", "test2 test2 {input_2} -h"], "command_introduction": ["用于测试", "22222"], "command_example": ["test test 111 -h", "test2 test2 222 -h"], "command_built_in": ["test test input_1 -h", "test2 test2 input_2 -h"], "result":["cmd output", "提取第3行"]}
+, "button_111": {"name": "button_test11", "simple_name": "发财11", "folder": "C:/11", "filename": "11test.exe", "introduction": "这是这个工具的介绍11", "command_template": ["test test {input_1} -h11", "test2 test2 {input_2} -h22"], "command_introduction": ["用于测试11", "2222211"], "command_example": ["test test 111 -h11", "test2 test2 222 -h22"], "command_built_in": ["test test input_1 -h11", "test2 test2 input_2 -h22"], "result":["cmd output", "提取第3行22"]}
+, "button_2": {"name": "button_test2", "simple_name": "test", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_3": {"name": "button_test3", "simple_name": "b3", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_4": {"name": "button_test4", "simple_name": "b4", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_5": {"name": "button_test5", "simple_name": "b5", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_6": {"name": "button_test6", "simple_name": "b6", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_7": {"name": "button_test7", "simple_name": "b7", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_8": {"name": "button_test8", "simple_name": "b8", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_9": {"name": "button_test9", "simple_name": "b9", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_10": {"name": "button_test10", "simple_name": "b10", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_11": {"name": "button_test11", "simple_name": "b11", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_12": {"name": "button_test12", "simple_name": "b12", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_13": {"name": "button_test13", "simple_name": "b13", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}, "button_14": {"name": "button_test14", "simple_name": "b14", "introduction": "", "built-in": [], "command": "test test {test} -h", "example": "test test 111 -h"}}
+
+    "tools_tool": {
+        "name": "button_test1",     # 工具名称
+        "simple_name": "b1",        # 工具简称,
+        "folder": "",               # 所在文件夹
+        "filename": "",             # 文件名称
+        "introduction": "",         # 工具介绍
+        "command_template": ["test test {input_1} -h"],         # 内置命令，input_1为单个功能中的共用变量，后续多个工具皆可使用
+        "command_introduction": ["用于测试"],                       # 内置命令对应的说明
+        "command_example": ["test test 111 -h"],                # 对应说明的使用样例,
+        "command_built_in": ["test test input_1 -h"],             # 内置了input变量的命令，可直接一键使用
+        "result": ["cmd output", "./test.txt", "../123/output.txt", "C:\\\\test.txt"]   # 产生的结果集以及对应的可处理方式
+    },
+
+# {"button_1": { "name": "tunnel_1", "position": "./1.py", "input": ["input_1"], "output": ["var_1", "var_2"], "introduction": "通道一，接收命令行数据并提取第一行"}, "button_2": { "name": "tunnel_2", "position": "./2.py", "input": ["input_1"], "output": ["var_1", "var_2"], "introduction": "通道二"}}
+
+    "tools_tunnel": {
+        "name": "tunnel_1",             # 通道名称
+        "position": "./1.py",             # 该通道数据处理脚本位置，给出模板用于编辑新脚本或修改旧脚本
+        "input": ["input_1"],                    # 通道输出变量，从已有的结果或输出中选择（模板随时改变，如def deal(input_1, input_2)）
+        "output": ["var_1", "var_2"],               # 通道输出变量（模板随时改变，如return var_1, var_2）
+        "introduction": "通道一，接收命令行数据并提取第一行",        # 通道介绍
+    },
+
+# {"button_1": {"name": "button_test3", "introduction": "测试命令", "command": "test test {variable_1} -h", "variable": ["variable_test"]}}
+
+    "tools_command": {
+        "name": "button_test3",         # 命令名称
+        "introduction": "",             # 命令介绍
+        "command": "test test {test} -h",           # 命令详情
+        "variable": [""],                # 命令变量
+        "dir": ""                       # 工作目录
+    },
+
+
+# {"button_1": {"name": "button_test4", "input": "", "type": 0, "introduction": ""}}
+
+    "tools_component": {
+        "name": "button_test4",         # 配件名称
+        "input": "",                    # 用户输入，为脚本位置或者命令详情，根据类型判断
+        "type": 0,                      # 配件类型
+        "introduction": ""              # 配件介绍
+    },
+
+
+# {"type": 0, "button_num": "button_1", "command_num": 0, "variable": [], "variable_value": [], "result_name": [], "component": ["object_num1", "object_num2"]}
+{'type': 0, 'button_num': 'button_1', 'command_num': 0, "variable": [], "variable_value": [], "result_name": [], 'component': ['button_1']}
+{'type': 0, 'button_num': 'button_1', 'command_num': 0, "variable": [], "variable_value": [], "result_name": [], 'component': ['button_1', 'button_1']}
+{'type': 0, 'button_num': 'button_1', 'command_num': 0, "variable": [], "variable_value": [], "result_name": [], 'component': ['button_1', 'button_1', 'button_1']}
+{'type': 0, 'button_num': 'button_2', 'command_num': 0, "variable": [], "variable_value": [], "result_name": [], 'component': ['button_1']}
+{'type': 0, 'button_num': 'button_2', 'command_num': 0, "variable": [], "variable_value": [], "result_name": [], 'component': ['button_1', 'button_1']}
+{'type': 0, 'button_num': 'button_2', 'command_num': 0, "variable": [], "variable_value": [], "result_name": [], 'component': ['button_1', 'button_1', 'button_1']}
+{'type': 1, 'tunnel': ['button_1'], "input_value": [[]], "result_name": [[]]}
+{'type': 1, 'tunnel': ['button_1', 'button_1'], "input_value": [[], []], "result_name": [[], []]}
+{'type': 1, 'tunnel': ['button_1', 'button_1', 'button_1'], "input_value": [[], [], []], "result_name": [[], [], []]}
+{'type': 1, 'tunnel': ['button_1', 'button_1', 'button_1', 'button_1'], "input_value": [[], [], [], []], "result_name": [[], [], [], []]}
+{'type': 1, 'tunnel': ['button_1', 'button_1', 'button_1', 'button_1', 'button_1'], "input_value": [[], [], [], [], []], "result_name": [[], [], [], [], []]}
+{'type': 1, 'tunnel': ['button_1', 'button_1', 'button_1', 'button_1', 'button_1', 'button_1'], "input_value": [[], [], [], [], [], []], "result_name": [[], [], [], [], [], []]}
+
+    "combine.txt": [{组件1}, {组件2}, {组件3}]
+
+#
+
+    "combine_variable": {
+        "variable": [{"name": "", "position": 1, "widget_name": "", "value": ""}],
+        "result": [""],
+        "introduction": ""
+    }
+
+# {"selected_tool": [{"name": "\u5de5\u51771", "button_num": "button_1", "command_num": 0}, {"name": "2", "button_num": "button_2", "command_num": 0}, {"name": "\u5de5\u51773", "button_num": "button_3", "command_num": 0}]}
+
+    "selected_tool": {
+        "name": "button_test6",
+        "button_num": "button_1",
+        "command_num": 0
+    },
+
+# {"selected_tunnel": [{"name": "tunnel_1", "button_num": "button_1"}, {"name": "tunnel_2", "button_num": "button_2"}]}
+
+    "selected_tunnel": {
+        "name": "button_test7",
+        "button_num": "button_1"
+    },
+
+# {"selected_component": [{"name": "\u914d\u4ef61", "button_num": "button_1"}, {"name": "\u914d\u4ef62", "button_num": "button_2"}]}
+
+    "selected_component": {
+        "name": "button_test8",
+        "button_num": "button_1"
+},
+
+
+#
+
+    "func": {
+        "name": "button_test9",
+        "variable": [{"name": "", "position": "1", "widget_name": "", "value": ""}],
+        "result": [""],
+        "introduction": "",
+        "config": []            # combine.txt列表
+    },
+
+
+#
+
+    "task_input_dict": {
+        "task_name": "111",
+        "variable": [{"name": "", "position": "1", "widget_name": "", "value": ""}],
+        "set_timer": False,
+        "time": (0, 0, 0)
+    }
+
+
+#
+
+    "task_status": {
+        "process": None,
+        "status": "",
+        "schedule": "",
+        "mode": "",
+        "dir": "",
+        "remain_time": "",
+    }
+
+
+    "tasks": QTreeWidgetItem
+    "tabs": QWidget
+    "log_browser": QTextBrowser
+
+
+    "task_list": {
+        "task_list": [{"name": "", "status": "", "schedule": "", "mode": "", "dir": ""}]
+    }
+}

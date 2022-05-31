@@ -1,0 +1,3 @@
+{'input_value': [['手动输入']], 'result_name': [['$target_url']], 'tunnel': ['button_4'], 'type': 1}
+{'button_num': 'button_8', 'command_num': 0, 'component': [], 'result_name': [''], 'type': 0, 'variable': ['$target'], 'variable_value': ['手动输入']}
+{'button_num': 'button_9', 'command_num': 0, 'component': [], 'result_name': [''], 'type': 0, 'variable': ['$target_url'], 'variable_value': ['手动输入']}

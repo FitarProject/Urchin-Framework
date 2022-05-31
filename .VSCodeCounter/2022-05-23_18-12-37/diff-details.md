@@ -1,0 +1,67 @@
+# Diff Details
+
+Date : 2022-05-23 18:12:37
+
+Directory f:\Urchin Framework\window\dialog
+
+Total : 52 files,  -4725 codes, 323 comments, 305 blanks, all -4097 lines
+
+[Summary](results.md) / [Details](details.md) / [Diff Summary](diff.md) / Diff Details
+
+## Files
+| filename | language | code | comment | blank | total |
+| :--- | :--- | ---: | ---: | ---: | ---: |
+| [resource/ui/combine_buttons_tool_dialog.ui](/resource/ui/combine_buttons_tool_dialog.ui) | XML | -182 | 0 | -1 | -183 |
+| [resource/ui/combine_buttons_tunnel_dialog.ui](/resource/ui/combine_buttons_tunnel_dialog.ui) | XML | -201 | 0 | -1 | -202 |
+| [resource/ui/combine_func_detatil_dialog.ui](/resource/ui/combine_func_detatil_dialog.ui) | XML | -120 | 0 | -1 | -121 |
+| [resource/ui/combine_func_introduction_dialog.ui](/resource/ui/combine_func_introduction_dialog.ui) | XML | -132 | 0 | -1 | -133 |
+| [resource/ui/combine_openvariable_dialog.ui](/resource/ui/combine_openvariable_dialog.ui) | XML | -105 | 0 | -1 | -106 |
+| [resource/ui/combine_tool_add_result_dialog.ui](/resource/ui/combine_tool_add_result_dialog.ui) | XML | -121 | 0 | -1 | -122 |
+| [resource/ui/combine_window.ui](/resource/ui/combine_window.ui) | XML | -232 | 0 | -1 | -233 |
+| [resource/ui/community_window.ui](/resource/ui/community_window.ui) | XML | -217 | 0 | -1 | -218 |
+| [resource/ui/main_window.ui](/resource/ui/main_window.ui) | XML | -551 | 0 | -1 | -552 |
+| [resource/ui/mine_func_detatil_dialog.ui](/resource/ui/mine_func_detatil_dialog.ui) | XML | -150 | 0 | -1 | -151 |
+| [resource/ui/mine_window.ui](/resource/ui/mine_window.ui) | XML | -202 | 0 | -1 | -203 |
+| [resource/ui/tools_buttons_addcommand_dialog.ui](/resource/ui/tools_buttons_addcommand_dialog.ui) | XML | -320 | 0 | -1 | -321 |
+| [resource/ui/tools_buttons_addtool_dialog.ui](/resource/ui/tools_buttons_addtool_dialog.ui) | XML | -440 | 0 | -1 | -441 |
+| [resource/ui/tools_buttons_addtunnel_dialog.ui](/resource/ui/tools_buttons_addtunnel_dialog.ui) | XML | -392 | 0 | -1 | -393 |
+| [resource/ui/tools_buttons_command_dialog.ui](/resource/ui/tools_buttons_command_dialog.ui) | XML | -345 | 0 | -1 | -346 |
+| [resource/ui/tools_buttons_component_dialog.ui](/resource/ui/tools_buttons_component_dialog.ui) | XML | -424 | 0 | -1 | -425 |
+| [resource/ui/tools_buttons_tool_dialog.ui](/resource/ui/tools_buttons_tool_dialog.ui) | XML | -456 | 0 | -1 | -457 |
+| [resource/ui/tools_buttons_tunnel_dialog.ui](/resource/ui/tools_buttons_tunnel_dialog.ui) | XML | -396 | 0 | -1 | -397 |
+| [resource/ui/tools_tool_add_command_built_in_dialog.ui](/resource/ui/tools_tool_add_command_built_in_dialog.ui) | XML | -121 | 0 | -1 | -122 |
+| [resource/ui/tools_tool_add_command_template_dialog.ui](/resource/ui/tools_tool_add_command_template_dialog.ui) | XML | -220 | 0 | -1 | -221 |
+| [resource/ui/tools_tool_add_result_dialog.ui](/resource/ui/tools_tool_add_result_dialog.ui) | XML | -121 | 0 | -1 | -122 |
+| [resource/ui/tools_tunnel_edit_customscript_dialog.ui](/resource/ui/tools_tunnel_edit_customscript_dialog.ui) | XML | -101 | 0 | -1 | -102 |
+| [resource/ui/tools_tunnel_edit_script_dialog.ui](/resource/ui/tools_tunnel_edit_script_dialog.ui) | XML | -153 | 0 | -1 | -154 |
+| [resource/ui/tools_window.ui](/resource/ui/tools_window.ui) | XML | -461 | 0 | -1 | -462 |
+| [resource/ui/works_addbutton_dialog.ui](/resource/ui/works_addbutton_dialog.ui) | XML | -111 | 0 | -1 | -112 |
+| [resource/ui/works_buttons_dialog.ui](/resource/ui/works_buttons_dialog.ui) | XML | -113 | 0 | -1 | -114 |
+| [resource/ui/works_task_input_dialog.ui](/resource/ui/works_task_input_dialog.ui) | XML | -142 | 0 | -1 | -143 |
+| [resource/ui/works_task_set_timer_dialog.ui](/resource/ui/works_task_set_timer_dialog.ui) | XML | -168 | 0 | -1 | -169 |
+| [resource/ui/works_tasks_dialog.ui](/resource/ui/works_task_result_dialog.ui) | XML | -114 | 0 | -1 | -115 |
+| [resource/ui/works_window.ui](/resource/ui/works_window.ui) | XML | -321 | 0 | -1 | -322 |
+| [window/dialog/combine_buttons_tool.py](/window/dialog/combine_buttons_tool.py) | Python | 135 | 49 | 21 | 205 |
+| [window/dialog/combine_buttons_tunnel.py](/window/dialog/combine_buttons_tunnel.py) | Python | 183 | 27 | 19 | 229 |
+| [window/dialog/combine_func_detatil.py](/window/dialog/combine_func_detatil.py) | Python | 76 | 1 | 13 | 90 |
+| [window/dialog/combine_func_introduction.py](/window/dialog/combine_func_introduction.py) | Python | 34 | 0 | 11 | 45 |
+| [window/dialog/combine_openvariable.py](/window/dialog/combine_openvariable.py) | Python | 144 | 15 | 24 | 183 |
+| [window/dialog/combine_tool_add_result.py](/window/dialog/combine_tool_add_result.py) | Python | 23 | 0 | 9 | 32 |
+| [window/dialog/mine_func_detatil.py](/window/dialog/mine_func_detatil.py) | Python | 70 | 1 | 12 | 83 |
+| [window/dialog/tools_buttons_addcommand.py](/window/dialog/tools_buttons_addcommand.py) | Python | 114 | 17 | 15 | 146 |
+| [window/dialog/tools_buttons_addtool.py](/window/dialog/tools_buttons_addtool.py) | Python | 278 | 37 | 33 | 348 |
+| [window/dialog/tools_buttons_addtunnel.py](/window/dialog/tools_buttons_addtunnel.py) | Python | 117 | 16 | 17 | 150 |
+| [window/dialog/tools_buttons_command.py](/window/dialog/tools_buttons_command.py) | Python | 220 | 39 | 20 | 279 |
+| [window/dialog/tools_buttons_tool.py](/window/dialog/tools_buttons_tool.py) | Python | 446 | 71 | 39 | 556 |
+| [window/dialog/tools_buttons_tunnel.py](/window/dialog/tools_buttons_tunnel.py) | Python | 217 | 28 | 20 | 265 |
+| [window/dialog/tools_tool_add_command_built_in.py](/window/dialog/tools_tool_add_command_built_in.py) | Python | 31 | 0 | 9 | 40 |
+| [window/dialog/tools_tool_add_command_template.py](/window/dialog/tools_tool_add_command_template.py) | Python | 31 | 2 | 9 | 42 |
+| [window/dialog/tools_tool_add_result.py](/window/dialog/tools_tool_add_result.py) | Python | 23 | 0 | 9 | 32 |
+| [window/dialog/tools_tunnel_edit_customscript.py](/window/dialog/tools_tunnel_edit_customscript.py) | Python | 48 | 1 | 9 | 58 |
+| [window/dialog/tools_tunnel_edit_script.py](/window/dialog/tools_tunnel_edit_script.py) | Python | 87 | 2 | 11 | 100 |
+| [window/dialog/works_addbutton.py](/window/dialog/works_addbutton.py) | Python | 12 | 1 | 6 | 19 |
+| [window/dialog/works_buttons.py](/window/dialog/works_buttons.py) | Python | 12 | 1 | 6 | 19 |
+| [window/dialog/works_task_input.py](/window/dialog/works_task_input.py) | Python | 90 | 5 | 14 | 109 |
+| [window/dialog/works_task_set_timer.py](/window/dialog/works_task_set_timer.py) | Python | 16 | 10 | 9 | 35 |
+
+[Summary](results.md) / [Details](details.md) / [Diff Summary](diff.md) / Diff Details

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>combine_window</class>
+ <widget class="QWidget" name="combine_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>593</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>炼金工坊</string>
+  </property>
+  <widget class="QWidget" name="combine_font" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>581</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <widget class="QPushButton" name="result_func">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>170</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;点击测试&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>成品演示？</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="result_func_introduction">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>250</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设置功能说明</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="combine_frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>411</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="combine_frame_label">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>7</y>
+       <width>45</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>合成栏</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="combine_button_resetlayout">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>10</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>重设布局</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="combine_button_addtunnel">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>10</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>添加通道部件</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="combine_button_addtool">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>10</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>添加工具部件</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="equal_label">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>210</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="selected_func" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>400</y>
+      <width>581</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="selected_func_label">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>7</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>预选区域</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selected_clear_component">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>4</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清空配件栏</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selected_clear_tunnel">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>4</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清空通道栏</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selected_clear_tool">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>4</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清空工具栏</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="selected_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>581</width>
+       <height>111</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="button_openvariable">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>10</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>查看变量和结果集</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
